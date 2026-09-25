@@ -37,9 +37,9 @@ Current activities include:
 
 *(This section represents the initial architecture thoughts and will be finalized after the research phase)*
 
-* **Frontend:** React / Next.js, Tailwind CSS
-* **Backend:** Python (FastAPI) or Node.js (Express)
-* **Database:** PostgreSQL
+* **Frontend (A cara do app):** HTML, CSS e JavaScript (React)
+* **Backend (O cérebro do app):** Python ou Java
+* **Database (Onde ficam salvos os subsídios):** PostgreSQL
 * **Version Control:** Git & GitHub
 
 ---
