@@ -4,15 +4,27 @@
 
 ---
 
+
 ## 🎯 About the Project
 
 **Can Business Support App** is a software engineering initiative designed to tackle a critical real-world challenge: helping Canadian Small and Medium-sized Enterprises (SMEs) navigate economic turbulence, supply chain disruptions, and shifting trade relations with the United States. 
 
-Navigating government assistance programs (such as federal, provincial, and regional relief funds) is often fragmented and bureaucratic. This platform acts as a centralized intelligence hub, featuring an interactive eligibility assessment tool (*matchmaking*) to pair businesses instantly with the right financial aid and operational resources.
+Navigating government assistance programs (such as federal, provincial, and regional relief funds) is often fragmented and bureaucratic. This platform aims to act as a centralized intelligence hub, featuring an interactive eligibility assessment tool (*matchmaking*) to pair businesses instantly with the right financial aid and operational resources.
 
 ---
 
-## ✨ Core Features
+## 🕒 Current Stage & Discovery Phase
+
+The project is currently in the **Research and Product Discovery** phase. Development has not yet started, as the focus is on gathering data to ensure the platform solves real, validated problems.
+
+Current activities include:
+* **User Research:** Interviewing and surveying Canadian entrepreneurs to map their biggest friction points when applying for subsidies.
+* **Market Analysis & Benchmarking:** Mapping existing government portals and private tools to identify gaps in user experience and data availability.
+* **Feature Scope Definition:** Translating user pain points into technical and functional requirements.
+
+---
+
+## 💡 Proposed Features (Subject to Validation)
 
 * **Smart Eligibility Quiz:** An interactive questionnaire that filters and recommends specific government subsidies and relief programs based on the enterprise's sector, size, and specific trade impact.
 * **Relief Funds Directory:** A structured repository of active federal and provincial grants, low-interest liquidity lines, and support initiatives.
@@ -21,23 +33,24 @@ Navigating government assistance programs (such as federal, provincial, and regi
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Preliminary Tech Stack
 
-*(This section will be updated as development progresses)*
+*(This section represents the initial architecture thoughts and will be finalized after the research phase)*
 
 * **Frontend:** React / Next.js, Tailwind CSS
-* **Backend:** Python (FastAPI) or Node.js
+* **Backend:** Python (FastAPI) or Node.js (Express)
 * **Database:** PostgreSQL
 * **Version Control:** Git & GitHub
 
 ---
 
-## 📂 Project Architecture
+## 📂 Project Architecture (Planned)
 
 ```text
 can-business-support-app/
 │
-├── frontend/          # User interface and questionnaire components
-├── backend/           # API routes, business logic, and matching engine
-├── database/          # Schema definitions and seed data for subsidy programs
-└── docs/              # Architecture diagrams and API documentation
+├── docs/              # Research notes, benchmark analysis, and user personas (Active)
+├── frontend/          # User interface and questionnaire components (Planned)
+├── backend/           # API routes, business logic, and matching engine (Planned)
+└── database/          # Schema definitions and seed data for subsidy programs (Planned)
+```
