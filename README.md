@@ -18,9 +18,9 @@ Navigating government assistance programs (such as federal, provincial, and regi
 The project is currently in the **Research and Product Discovery** phase. Development has not yet started, as the focus is on gathering data to ensure the platform solves real, validated problems.
 
 Current activities include:
-* **User Research:** Interviewing and surveying Canadian entrepreneurs to map their biggest friction points when applying for subsidies.
-* **Market Analysis & Benchmarking:** Mapping existing government portals and private tools to identify gaps in user experience and data availability.
-* **Feature Scope Definition:** Translating user pain points into technical and functional requirements.
+* **User Research:** Surveying Canadian entrepreneurs to identify major friction points when navigating government aid, subsidies, and financial support information.
+* **Market Analysis & Benchmarking:** Auditing existing public portals and private tools to map available programs/financial products and uncover gaps in user experience or data accessibility.
+* **Feature Scope Definition:** Translating validated entrepreneur pain points into technical requirements and functional app features.
 
 ---
 
@@ -37,9 +37,9 @@ Current activities include:
 
 *(This section represents the initial architecture thoughts and will be finalized after the research phase)*
 
-* **Frontend (A cara do app):** HTML, CSS e JavaScript (React)
-* **Backend (O cérebro do app):** Python ou Java
-* **Database (Onde ficam salvos os subsídios):** PostgreSQL
+* **Frontend:** HTML, CSS, and JavaScript (React for dynamic quiz state management)
+* **Backend:** Python or Java (For data matching and API routing)
+* **Database:** PostgreSQL (For structured subsidy data storage)
 * **Version Control:** Git & GitHub
 
 ---
@@ -50,7 +50,8 @@ Current activities include:
 can-business-support-app/
 │
 ├── docs/              # Research notes, benchmark analysis, and user personas (Active)
-├── frontend/          # User interface and questionnaire components (Planned)
-├── backend/           # API routes, business logic, and matching engine (Planned)
-└── database/          # Schema definitions and seed data for subsidy programs (Planned)
+├── scripts/           # Python web scrapers to gather and clean private and public data (Planned)
+├── frontend/          # Questionnaire interface and user dashboard (Planned)
+├── backend/           # Quiz matching logic and search query engine (Planned)
+└── database/          # PostgreSQL tables populated with mapped subsidies (Planned)
 ```
