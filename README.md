@@ -1,57 +1,75 @@
 # 💵 Can Business Support App
 
-> A centralized digital platform connecting Canadian SMEs with emergency relief funds, government subsidies, and supply chain resilience resources during economic transitions.
+> A centralized B2B intelligence platform connecting Canadian SMEs with emergency relief funds, government subsidies, and supply chain resilience resources during economic transitions.
 
 ---
 
-
 ## 🎯 About the Project
 
-**Can Business Support App** is a software engineering initiative designed to tackle a critical real-world challenge: helping Canadian Small and Medium-sized Enterprises (SMEs) navigate economic turbulence, supply chain disruptions, and shifting trade relations with the United States. 
+**Can Business Support App** is an academic software engineering project designed to solve a critical economic challenge: helping Canadian Small and Medium Enterprises (SMEs) navigate market turbulence, supply chain friction, and shifting trade dynamics with the United States.
 
-Navigating government assistance programs (such as federal, provincial, and regional relief funds) is often fragmented and bureaucratic. This platform aims to act as a centralized intelligence hub, featuring an interactive eligibility assessment tool (*matchmaking*) to pair businesses instantly with the right financial aid and operational resources.
+Conceived as a B2B financial intelligence hub, the platform integrates a structured subsidy directory with a deterministic eligibility engine, delivering transparent, audit-ready program matching for corporate decision-makers. By bridging the gap between complex public policy and business execution, the system eliminates manual navigation overhead and provides actionable clarity when timing is critical.
+
+---
+
+## 🔍 The Pain
+
+Canadian entrepreneurs face a severe information asymmetry across the public and financial sectors:
+
+1. **Information Fragmentation & Cognitive Friction:** Business support programs are heavily dispersed across federal portals (`Canada.ca`), provincial networks (`Ontario.ca`), regional development agencies (`FedNor`, `FedDev`), crown corporations (`BDC`), and domain-specific initiatives, preventing a unified view of available funding.
+2. **Regulatory & Financial Complexity:** Complex policy nomenclature, such as matching fund mandates, cumulative eligibility thresholds, and customs compliance rules, creates significant barriers to manual interpretation and compliance verification.
+3. **High Discovery Costs & Operational Overhead:** Determining baseline eligibility currently demands specialized external advisory (legal/accounting) or extensive internal manual labor. This multi-week discovery cycle generates opportunity costs and delays critical liquidity.
+
+---
+
+## 🏛️ Platform Architecture & Product Philosophy
+
+The platform adopts a **Dual-Core System Strategy** to maintain institutional credibility while providing modern usability:
+
+### Core A: B2B Centralized Directory & Faceted Search
+* **Institutional / Tabular Interface:** A clean, executive view inspired by financial dashboards and business intelligence terminals.
+* **Faceted Search Filters:** High-precision filtering by:
+  * Industry / Sector (Manufacturing, Agriculture, Logistics, etc.)
+  * Enterprise Size / Revenue / Employee Count
+  * Geographic Location / Province / Region
+  * Financial Instrument Type (Non-repayable Grants, Publicly Guaranteed Loans, Tax Credits / SR&ED)
+  * Program Status (Open Applications, Upcoming, Closed)
+* **Structured Datasheets:** Every program is normalized into an executive datasheet featuring a 3-point summary, funding ranges, hard eligibility criteria, direct official links, and required documentation.
+
+### Core B: Corporate Triage Assistant (Smart Natural Language / Guided Filter)
+* **Executive Guided Filter:** Replaces casual quizzes with a declarative, professional triage form or natural language query input.
+* **Deterministic Backend Scoring:** Inputs map directly to deterministic SQL filtering algorithms and dynamic eligibility scoring models in PostgreSQL.
 
 ---
 
 ## 🕒 Current Stage & Discovery Phase
 
-The project is currently in the **Research and Product Discovery** phase. Development has not yet started, as the focus is on gathering data to ensure the platform solves real, validated problems.
+The project is currently in the **Research and Product Discovery** phase. 
 
 Current activities include:
-* **User Research:** Surveying Canadian entrepreneurs to identify major friction points when navigating government aid, subsidies, and financial support information.
-* **Market Analysis & Benchmarking:** Auditing existing public portals and private tools to map available programs/financial products and uncover gaps in user experience or data accessibility.
-* **Feature Scope Definition:** Translating validated entrepreneur pain points into technical requirements and functional app features.
+- **User Research:** Surveying Canadian business owners and financial advisors to refine user friction points and criteria mapping.
+- **Market Analysis & Benchmarking:** Auditing public portals (federal/provincial) and financial tools to map subsidy schemas and data fields.
+- **Feature & Schema Definition:** Translating validated pain points into technical requirements, relational database schemas, and data ingestion pipelines.
 
 ---
 
-## 💡 Proposed Features (Subject to Validation)
+## 🛠️ Tech Stack & Architecture
 
-* **Smart Eligibility Quiz:** An interactive questionnaire that filters and recommends specific government subsidies and relief programs based on the enterprise's sector, size, and specific trade impact.
-* **Relief Funds Directory:** A structured repository of active federal and provincial grants, low-interest liquidity lines, and support initiatives.
-* **Supply Chain Insights:** Resources and guidance to help businesses diversify suppliers and optimize operations outside traditional channels.
-* **B2B Clean Interface:** Designed with a modern, responsive layout prioritizing user experience and quick data retrieval for busy entrepreneurs.
-
----
-
-## 🛠️ Preliminary Tech Stack
-
-*(This section represents the initial architecture thoughts and will be finalized after the research phase)*
-
-* **Frontend:** HTML, CSS, and JavaScript (React for dynamic quiz state management)
-* **Backend:** Python or Java (For data matching and API routing)
-* **Database:** PostgreSQL (For structured subsidy data storage)
-* **Version Control:** Git & GitHub
+- **Frontend:** HTML, CSS, JavaScript / React (Clean, responsive B2B dashboard UI & dynamic triage state management)
+- **Backend:** Python / Java (API routing, deterministic scoring engine, and automated ingestion logic)
+- **Database:** PostgreSQL (Relational schema for structured subsidies, faceted filtering, and eligibility scoring)
+- **Version Control:** Git & GitHub
 
 ---
 
-## 📂 Project Architecture (Planned)
+## 📂 Project Architecture
 
 ```text
 can-business-support-app/
 │
-├── docs/              # Research notes, benchmark analysis, and user personas (Active)
-├── scripts/           # Python web scrapers to gather and clean private and public data (Planned)
-├── frontend/          # Questionnaire interface and user dashboard (Planned)
-├── backend/           # Quiz matching logic and search query engine (Planned)
-└── database/          # PostgreSQL tables populated with mapped subsidies (Planned)
+├── docs/            # Research notes, benchmark analysis, and user personas
+├── scripts/         # Web scrapers and data normalization scripts for public/private sources
+├── frontend/        # Tabular B2B dashboard and Corporate Triage UI
+├── backend/         # Eligibility scoring engine, API routing, and deterministic logic
+└── database/        # PostgreSQL migrations, table schemas, and indexed subsidy data
 ```
