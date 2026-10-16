@@ -12,7 +12,7 @@ Conceived as a B2B financial intelligence hub, the platform integrates a structu
 
 ---
 
-## 🔍 The Pain Point Matrix
+## 🔍 The Pain
 
 Canadian entrepreneurs face a severe information asymmetry across the public and financial sectors:
 
